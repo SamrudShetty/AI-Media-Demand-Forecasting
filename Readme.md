@@ -1,11 +1,11 @@
 # 📊 AI Media Demand Forecasting System
 
 ## 🚀 Overview
-This project is an end-to-end AI-based media demand forecasting system that analyses Google Trends (PyTrends) data and user watch history to predict future content demand.
+This project is an AI-based media demand forecasting system that predicts which content will be popular by analyzing Google Trends (PyTrends) and user watch history.  
+It combines data preprocessing, feature engineering, and machine learning to generate actionable insights and visual forecasts.  
+The workflow includes data collection, modeling, visualization, and an app-based execution for easy use.
 
-It simulates a real-world streaming platform scenario by leveraging these key datasets to forecast media consumption patterns and help optimize content strategy.
-
-*Additional datasets such as movies, users, reviews, search logs, and recommendation logs are planned for future phases of this project.*
+*Additional datasets such as movies, users, reviews, search logs, and recommendation logs will be integrated in future phases.*
 
 ---
 
