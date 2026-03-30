@@ -45,7 +45,6 @@ AI-Media-Demand-Forecasting/
 │ ├── forecast.csv
 │ └── forecast_plot.png
 │
-├── notebooks/ # (Optional analysis)
 ├── requirements.txt
 └── README.md
 
