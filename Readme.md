@@ -1,5 +1,7 @@
 # 🎬 AI-Powered Streaming Intelligence Platform
 
+🚀 Live AI dashboard for forecasting media demand, analyzing user behavior, and identifying content gaps.
+
 ## 🌐 Live Demo  
 https://ai-media-demand-forecasting-mnxhfqnuaadqxw2mwxjgpk.streamlit.app/
 
@@ -124,12 +126,13 @@ streamlit run app/app.py
 
 ---
 
+
 ## 🔮 Future Enhancements
 
-* 🤖 GenAI-powered chatbot for querying insights
-* ☁️ Cloud deployment (AWS / Streamlit Cloud)
-* 📊 Power BI dashboard integration
-* 🔄 Real-time data pipelines
+- 🤖 GenAI-powered chatbot for querying insights  
+- 📊 Power BI dashboard integration  
+- 🔄 Real-time data pipelines  
+- ☁️ Advanced cloud deployment (AWS Lambda, ECS)  
 
 ---
 
