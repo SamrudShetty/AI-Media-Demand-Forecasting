@@ -1,7 +1,7 @@
 # 🎬 AI-Powered Streaming Intelligence Platform
 
 ## 🌐 Live Demo  
-https://your-app-name.streamlit.app
+https://ai-media-demand-forecasting-mnxhfqnuaadqxw2mwxjgpk.streamlit.app/
 
 ## 🚀 Overview
 
@@ -51,7 +51,9 @@ This system enables:
 
 ## 📊 Dashboard Preview
 
-(Add screenshots here after deployment)
+![Dashboard](Images/Dashboard.jpg)
+![Model Comparison](Images/model_comparison.jpg)
+![Gap Analysis](Images/gap_analysis.jpg)
 
 ---
 
@@ -119,11 +121,6 @@ python src/model.py
 streamlit run app/app.py
 ```
 
----
-
-## 🌐 Live Demo
-
-(Add your Streamlit link here after deployment)
 
 ---
 
