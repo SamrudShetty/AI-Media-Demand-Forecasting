@@ -1,136 +1,152 @@
-# 📊 AI Media Demand Forecasting System
+# 🎬 AI-Powered Streaming Intelligence Platform
 
 ## 🚀 Overview
-This project is an AI-based media demand forecasting system that predicts which content will be popular by analyzing Google Trends (PyTrends) and user watch history.  
-It combines data preprocessing, feature engineering, and machine learning to generate actionable insights and visual forecasts.  
-The workflow includes data collection, modeling, visualization, and an app-based execution for easy use.
 
-*Additional datasets such as movies, users, reviews, search logs, and recommendation logs will be integrated in future phases.*
+An end-to-end AI-driven analytics system that forecasts media demand and identifies content gaps using user behavior, engagement data, and machine learning models.
+
+This project combines **multi-source data engineering, machine learning, and interactive visualization** to provide actionable insights for content strategy and demand planning.
 
 ---
 
 ## 🎯 Key Features
-- 📦 Data pipeline for multiple datasets  
-- 🧹 Data preprocessing & cleaning  
-- 📈 Trend analysis using PyTrends data  
-- 🤖 Machine learning-based demand forecasting  
-- 📊 Visualization of predictions  
-- 🖥️ App-based execution (`app.py`)  
+
+* 📊 Demand Forecasting using Prophet (time-series modeling)
+* 🤖 Machine Learning Models: Random Forest & XGBoost
+* 📉 Model Performance Comparison (MAE evaluation)
+* 🔍 Demand-Supply Gap Analysis (search vs recommendations)
+* 📈 Interactive Streamlit Dashboard
+* 🧠 Business Insights for decision-making
+* 📦 Multi-source Data Integration:
+
+  * Google Trends
+  * Search logs
+  * Recommendation logs
+  * Reviews & engagement data
 
 ---
 
-## 📂 Project Structure
+## 🧠 Business Impact
+
+This system enables:
+
+* Identification of **unmet demand** in content categories
+* Optimization of **recommendation systems**
+* Data-driven **content investment decisions**
+* Improved **user engagement strategies**
+
+---
+
+## 🧰 Tech Stack
+
+* **Languages:** Python
+* **Libraries:** Pandas, NumPy, Scikit-learn
+* **ML Models:** Prophet, Random Forest, XGBoost
+* **Visualization:** Plotly, Streamlit
+* **Data Sources:** PyTrends + simulated streaming datasets
+
+---
+
+## 📊 Dashboard Preview
+
+(Add screenshots here after deployment)
+
+---
+
+## 📁 Project Structure
+
+```
 AI-Media-Demand-Forecasting/
 │
 ├── app/
-│ └── app.py # Main application entry point
+│   └── app.py                # Streamlit dashboard
 │
-├── data/ # Raw & cleaned datasets
-│ ├── movies.csv
-│ ├── users.csv
-│ ├── watch_history.csv
-│ ├── reviews.csv
-│ ├── search_logs.csv
-│ ├── recommendation_logs.csv
-│ ├── pytrends_data.csv
-│ └── cleaned_pytrends.csv
+├── src/
+│   ├── data_collection.py
+│   ├── preprocessing.py
+│   ├── feature_engineering.py
+│   ├── model.py
 │
-├── src/ # Core logic
-│ ├── data_collection.py
-│ ├── preprocessing.py
-│ ├── model.py
-│ └── visualize.py
-│
-├── outputs/ # Results
-│ ├── forecast.csv
-│ └── forecast_plot.png
+├── data/                     # Raw & processed datasets
+├── outputs/                  # Model outputs
+│   ├── forecast.csv
+│   ├── model_comparison.csv
 │
 ├── requirements.txt
 └── README.md
-
-
-
----
-
-## 🔍 Workflow
-
-1. **Data Collection**  
-   - Collect Google Trends and watch history data  
-
-2. **Data Preprocessing**  
-   - Clean missing values  
-   - Feature engineering  
-
-3. **Model Building**  
-   - Train machine learning model to predict demand  
-
-4. **Forecast Generation**  
-   - Generate future demand forecasts  
-
-5. **Visualization**  
-   - Create graphical representations of forecast results  
+```
 
 ---
 
-## 📊 Datasets Used
+## 🔄 Workflow
 
-Currently used datasets:
+1. **Data Collection**
 
-- 📈 Google Trends (PyTrends)  
-- ⏱️ Watch history  
+   * Google Trends + user activity data
 
-*Other datasets like movies, users, reviews, search logs, and recommendation logs are reserved for future development phases.*
+2. **Feature Engineering**
+
+   * Aggregated demand signals
+   * Created demand score & gap metrics
+
+3. **Modeling**
+
+   * Prophet (time-series baseline)
+   * Random Forest & XGBoost
+
+4. **Model Evaluation**
+
+   * Compared models using MAE
+
+5. **Visualization**
+
+   * Interactive dashboard with insights
 
 ---
 
-## ▶️ How to Run the Project
-
-### 1. Clone the repository
+## ⚙️ How to Run
 
 ```bash
 git clone https://github.com/SamrudShetty/AI-Media-Demand-Forecasting.git
 cd AI-Media-Demand-Forecasting
 
-2. Install dependencies
 pip install -r requirements.txt
 
-3. Run the application
-python app/app.py
-
-📈 Output
-The model generates:
-Forecasted demand data saved as outputs/forecast.csv
-Visualization plot saved as outputs/forecast_plot.png
-
-🧠 Technologies Used
-Python
-Pandas & NumPy
-Scikit-learn
-Matplotlib / Seaborn
-
-🔮 Future Enhancements
-Deploy as an interactive web app (Streamlit)
-Add real-time data integration
-Incorporate deep learning models (LSTM)
-Integrate additional datasets for richer forecasting and recommendations
-
-💼 Real-World Applications
-OTT platforms like Netflix and Prime Video
-Content recommendation engines
-Marketing and trend analysis
-Inventory and demand planning
-
-👨‍💻 Author
-Samrud Shetty
-GitHub: https://github.com/SamrudShetty
-
-
-⭐ If you find this project useful
-
-Please give it a star ⭐ on GitHub!
-
-
+python src/feature_engineering.py
+python src/model.py
+streamlit run app/app.py
+```
 
 ---
 
-	
+## 🌐 Live Demo
+
+(Add your Streamlit link here after deployment)
+
+---
+
+## 🔮 Future Enhancements
+
+* 🤖 GenAI-powered chatbot for querying insights
+* ☁️ Cloud deployment (AWS / Streamlit Cloud)
+* 📊 Power BI dashboard integration
+* 🔄 Real-time data pipelines
+
+---
+
+## 💼 Real-World Applications
+
+* OTT platforms (Netflix, Prime Video)
+* Content recommendation engines
+* Marketing & trend analysis
+* Demand forecasting & planning
+
+---
+
+## 👨‍💻 Author
+
+**Samrud Shetty**
+GitHub: https://github.com/SamrudShetty
+
+---
+
+⭐ If you find this project useful, consider giving it a star!
