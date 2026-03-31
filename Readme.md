@@ -1,5 +1,8 @@
 # 🎬 AI-Powered Streaming Intelligence Platform
 
+## 🌐 Live Demo  
+https://your-app-name.streamlit.app
+
 ## 🚀 Overview
 
 An end-to-end AI-driven analytics system that forecasts media demand and identifies content gaps using user behavior, engagement data, and machine learning models.
