@@ -21,6 +21,7 @@ This project combines **multi-source data engineering, machine learning, and int
 * 🔍 Demand-Supply Gap Analysis (search vs recommendations)
 * 📈 Interactive Streamlit Dashboard
 * 🧠 Business Insights for decision-making
+- 📊 Power BI Business Intelligence Dashboard
 * 📦 Multi-source Data Integration:
 
   * Google Trends
@@ -57,6 +58,9 @@ This system enables:
 ![Model Comparison](Images/model_comparison.jpg)
 ![Gap Analysis](Images/gap_analysis.jpg)
 
+---
+### 📊 Power BI Dashboard
+![Power BI](Images/powerbi.jpg)
 ---
 
 ## 📁 Project Structure
@@ -125,12 +129,22 @@ streamlit run app/app.py
 
 
 ---
+## 📊 Power BI Dashboard
 
+A business-focused dashboard was built using Power BI to present:
+
+- KPI metrics (Demand, Gap, Model Errors)
+- Model comparison visualizations
+- Demand-supply gap analysis
+- Business insights for decision-making
+
+📁 File included: `Streaming_Analytics_Dashboard.pbix`
+
+---
 
 ## 🔮 Future Enhancements
 
-- 🤖 GenAI-powered chatbot for querying insights  
-- 📊 Power BI dashboard integration  
+- 🤖 GenAI-powered chatbot for querying insights   
 - 🔄 Real-time data pipelines  
 - ☁️ Advanced cloud deployment (AWS Lambda, ECS)  
 
