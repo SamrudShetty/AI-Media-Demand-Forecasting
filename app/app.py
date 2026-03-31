@@ -1,6 +1,15 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import sys
+import os
+
+# -------------------------------
+# FIX IMPORT PATH (IMPORTANT)
+# -------------------------------
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from src.chatbot import answer_question
 
 # -------------------------------
 # PAGE CONFIG
@@ -38,7 +47,7 @@ st.metric(
 )
 
 # -------------------------------
-# DATE FILTER (applies to BOTH)
+# DATE FILTER
 # -------------------------------
 st.markdown("### 📅 Select Date Range")
 
@@ -67,7 +76,7 @@ fig1 = px.line(
     model_df,
     x='ds',
     y=['y', 'rf_pred', 'xgb_pred'],
-    title='Actual vs Model Predictions'
+    title='📈 Demand vs Model Predictions'
 )
 
 st.plotly_chart(fig1, use_container_width=True)
@@ -81,7 +90,7 @@ fig2 = px.line(
     forecast_df,
     x='ds',
     y='yhat',
-    title='Forecasted Demand (Prophet)'
+    title='📊 Forecasted Demand (Prophet)'
 )
 
 st.plotly_chart(fig2, use_container_width=True)
@@ -97,7 +106,7 @@ fig3 = px.bar(
     model_df,
     x='ds',
     y='gap',
-    title='Demand-Supply Gap Over Time'
+    title='⚖️ Demand-Supply Gap Over Time'
 )
 
 st.plotly_chart(fig3, use_container_width=True)
@@ -118,6 +127,17 @@ st.write("""
 - Optimize recommendation algorithms  
 - Invest in trending content segments  
 """)
+
+# -------------------------------
+# CHATBOT SECTION
+# -------------------------------
+st.markdown("## 🤖 Ask Your Data")
+
+user_input = st.text_input("Ask a question about demand, models, or gap")
+
+if user_input:
+    response = answer_question(user_input)
+    st.write(response)
 
 # -------------------------------
 # RAW DATA

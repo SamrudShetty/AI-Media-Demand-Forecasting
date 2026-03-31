@@ -20,6 +20,7 @@ This project combines **multi-source data engineering, machine learning, and int
 * 📉 Model Performance Comparison (MAE evaluation)
 * 🔍 Demand-Supply Gap Analysis (search vs recommendations)
 * 📈 Interactive Streamlit Dashboard
+* 🤖 Interactive Chatbot for querying insights
 * 🧠 Business Insights for decision-making
 - 📊 Power BI Business Intelligence Dashboard
 * 📦 Multi-source Data Integration:
@@ -57,6 +58,11 @@ This system enables:
 ![Dashboard](Images/Dashboard.jpg)
 ![Model Comparison](Images/model_comparison.jpg)
 ![Gap Analysis](Images/gap_analysis.jpg)
+
+---
+
+### 🤖 Chatbot Feature
+![Chatbot](Images/chatbot.jpg)
 
 ---
 ### 📊 Power BI Dashboard
@@ -143,8 +149,7 @@ A business-focused dashboard was built using Power BI to present:
 ---
 
 ## 🔮 Future Enhancements
-
-- 🤖 GenAI-powered chatbot for querying insights   
+   
 - 🔄 Real-time data pipelines  
 - ☁️ Advanced cloud deployment (AWS Lambda, ECS)  
 
